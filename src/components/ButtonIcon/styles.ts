@@ -26,6 +26,6 @@ export const styles = StyleSheet.create({
     flex: 1,
     textAlign: 'center',
     fontSize: 15,
-    Color: THEME.COLORS.HEADING
+    color: THEME.COLORS.HEADING
   }
 });
