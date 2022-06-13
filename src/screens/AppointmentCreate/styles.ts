@@ -24,12 +24,12 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     paddingRight: 25,
     overflow: "hidden",
-    backgroundColor: 'red'
   },
   image: {
     width: 64,
     height: 68,
-    backgroundColor: THEME.COLORS.SECONDARY_50,
+    backgroundColor: THEME.COLORS.SECONDARY_40,
+    borderColor: THEME.COLORS.SECONDARY_50,
     borderWidth: 1,
     borderRadius: 8,
   },
@@ -38,14 +38,14 @@ export const styles = StyleSheet.create({
     alignItems: "center",
   },
   field: {
-    width: '100%',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: 30
+    width: "100%",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginTop: 30,
   },
   column: {
-    flexDirection: 'row',
-    alignItems: 'center'
+    flexDirection: "row",
+    alignItems: "center",
   },
   divider: {
     marginRight: 4,
@@ -60,6 +60,6 @@ export const styles = StyleSheet.create({
   },
   footer: {
     marginVertical: 20,
-    marginBottom: 56
-  }
+    marginBottom: 56,
+  },
 });

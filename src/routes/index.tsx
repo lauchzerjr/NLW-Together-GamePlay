@@ -3,6 +3,8 @@ import { DefaultTheme, NavigationContainer } from "@react-navigation/native";
 
 import { AuthRoutes } from "./auth.routes";
 import { THEME } from "../global/styles/theme";
+import { useAuth } from "../hooks/auth";
+import { SignIn } from "../screens/SignIn";
 
 const navTheme = {
   ...DefaultTheme,
@@ -14,9 +16,11 @@ const navTheme = {
 };
 
 export function Routes() {
+  const {user} = useAuth();
+
   return (
     <NavigationContainer theme={navTheme}>
-      <AuthRoutes />
+     {user.id ? <AuthRoutes /> : <SignIn />}
     </NavigationContainer>
   );
 }

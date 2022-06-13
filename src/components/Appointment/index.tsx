@@ -12,13 +12,8 @@ import { styles } from "./styles";
 import PlayerSvg from "../../assets/player.svg";
 import CalendarSvg from "../../assets/calendar.svg";
 import { THEME } from "../../global/styles/theme";
-
-type GuildProps = {
-  id: string;
-  name: string;
-  icon: null;
-  owner: boolean;
-};
+import { GuildProps } from "../Guild";
+import { LinearGradient } from "expo-linear-gradient";
 
 export type AppointmentProps = {
   id: string;
@@ -35,12 +30,14 @@ type Props = TouchableOpacityProps & {
 export function Appointment({ data, ...rest }: Props) {
   const [category] = categories.filter((item) => item.id === data.category);
   const { owner } = data.guild;
-  const { PRIMARY, ON } = THEME.COLORS;
+  const { PRIMARY, ON, SECONDARY_50, SECONDARY_70 } = THEME.COLORS;
 
   return (
     <TouchableOpacity {...rest}>
       <View style={styles.container}>
-        <GuildIcon />
+        <LinearGradient style={styles.guildIconContainer} colors={[SECONDARY_50, SECONDARY_70]} >
+          <GuildIcon />
+        </LinearGradient>
 
         <View style={styles.content}>
           <View style={styles.header}>

@@ -7,6 +7,7 @@ export const styles = StyleSheet.create({
     width: "100%",
     justifyContent: "space-between",
     paddingHorizontal: 24,
+    marginTop: 27
   },
   title: {
     fontFamily: THEME.FONTS.TITLE_700,

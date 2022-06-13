@@ -15,21 +15,24 @@ type Props = {
 
 export function Header({ title, action }: Props) {
   const { SECONDARY_40, SECONDARY_100, HEADING } = THEME.COLORS;
-  const navigation = useNavigation()
+  const navigation = useNavigation();
 
   function handleGoBack() {
-    navigation.goBack()
+    navigation.goBack();
   }
 
   return (
-    <LinearGradient colors={[SECONDARY_100, SECONDARY_40]} style={styles.container}>
+    <LinearGradient
+      colors={[SECONDARY_100, SECONDARY_40]}
+      style={styles.container}
+    >
       <TouchableOpacity onPress={handleGoBack}>
         <Feather name="arrow-left" size={24} color={HEADING} />
       </TouchableOpacity>
 
       <Text style={styles.title}>{title}</Text>
 
-      {action && <View>{action}</View>}
+      {action ? <View>{action}</View> : <View style={{ width: 24 }} />}
     </LinearGradient>
   );
 }
