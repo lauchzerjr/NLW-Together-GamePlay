@@ -35,8 +35,11 @@ export function Appointment({ data, ...rest }: Props) {
   return (
     <TouchableOpacity {...rest}>
       <View style={styles.container}>
-        <LinearGradient style={styles.guildIconContainer} colors={[SECONDARY_50, SECONDARY_70]} >
-          <GuildIcon />
+        <LinearGradient
+          style={styles.guildIconContainer}
+          colors={[SECONDARY_50, SECONDARY_70]}
+        >
+          <GuildIcon guildId={data.guild.id} iconId={data.guild.icon} />
         </LinearGradient>
 
         <View style={styles.content}>

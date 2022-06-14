@@ -1,14 +1,14 @@
-import { THEME } from './../../global/styles/theme';
+import { THEME } from "./../../global/styles/theme";
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
-    width: '100%',
+    width: "100%",
     height: 56,
     backgroundColor: THEME.COLORS.PRIMARY,
     alignItems: "center",
-    flexDirection: 'row',
-    borderRadius: 8
+    flexDirection: "row",
+    borderRadius: 8,
   },
   iconWrapper: {
     width: 56,
@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderRightWidth: 1,
-    borderColor: THEME.COLORS.LINE
+    borderColor: THEME.COLORS.LINE,
   },
   icon: {
     width: 24,
@@ -24,9 +24,9 @@ export const styles = StyleSheet.create({
   },
   title: {
     flex: 1,
-    textAlign: 'center',
+    textAlign: "center",
     fontSize: 15,
     color: THEME.COLORS.HEADING,
     fontFamily: THEME.FONTS.TEXT_500,
-  }
+  },
 });

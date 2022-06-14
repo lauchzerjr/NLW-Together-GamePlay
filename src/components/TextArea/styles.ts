@@ -1,9 +1,9 @@
-import { THEME } from '../../global/styles/theme';
+import { THEME } from "../../global/styles/theme";
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
-    width: '100%',
+    width: "100%",
     height: 95,
     backgroundColor: THEME.COLORS.SECONDARY_40,
     color: THEME.COLORS.HEADING,
@@ -14,6 +14,6 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: THEME.COLORS.SECONDARY_50,
     padding: 16,
-    textAlignVertical: 'top'
+    textAlignVertical: "top",
   },
 });

@@ -1,4 +1,4 @@
-import { THEME } from './../../global/styles/theme';
+import { THEME } from "./../../global/styles/theme";
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
@@ -11,8 +11,8 @@ export const styles = StyleSheet.create({
     fontFamily: THEME.FONTS.TEXT_400,
     fontSize: 13,
     marginRight: 4,
-    textAlign: 'center',
+    textAlign: "center",
     borderWidth: 1,
-    borderColor: THEME.COLORS.SECONDARY_50
+    borderColor: THEME.COLORS.SECONDARY_50,
   },
 });

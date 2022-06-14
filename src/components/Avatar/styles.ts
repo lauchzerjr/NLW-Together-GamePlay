@@ -7,14 +7,11 @@ export const styles = StyleSheet.create({
     borderRadius: 8,
     alignItems: "center",
     justifyContent: "center",
-    marginRight: 22
-
-    // flex: 1,
-    // backgroundColor: "#fff",
+    marginRight: 22,
   },
   avatar: {
     width: 46,
     height: 46,
     borderRadius: 8,
-  }
+  },
 });

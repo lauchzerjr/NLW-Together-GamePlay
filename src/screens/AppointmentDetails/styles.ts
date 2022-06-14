@@ -25,7 +25,7 @@ export const styles = StyleSheet.create({
     fontSize: 13,
     fontFamily: THEME.FONTS.TEXT_400,
     color: THEME.COLORS.HEADING,
-    lineHeight: 21
+    lineHeight: 21,
   },
   members: {
     marginLeft: 24,
@@ -34,6 +34,6 @@ export const styles = StyleSheet.create({
   footer: {
     paddingHorizontal: 24,
     paddingVertical: 20,
-    marginBottom: getBottomSpace()
-  }
+    marginBottom: getBottomSpace(),
+  },
 });
