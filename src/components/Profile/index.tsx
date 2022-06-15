@@ -17,7 +17,7 @@ export function Profile() {
       {
         text: "Sim",
         onPress: () => {
-          signOut;
+          signOut();
         },
       },
     ]);
